@@ -1,0 +1,167 @@
+@model IEnumerable<Entidad1.GeneralEntidad1>
+
+@{
+    ViewBag.Title = "auto";
+}
+
+<style>
+
+    .body {
+        color: white;
+    }
+
+    .cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bo {
+        margin-left: 5px;
+    }
+
+    .datos {
+        border-radius: 12px;
+        font-size: 18px;
+        height: auto;
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        top: 25% !important;
+    }
+
+        .datos .row {
+            background-color: lightgray;
+            width: auto;
+        }
+</style>
+
+
+<div class="s130">
+    <form action="/Home/Auto" method="post">
+        <div class="inner-form">
+            <div class="input-field first-wrap">
+                <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    </svg>
+                </div>
+                <input id="search" type="text" name="buscar2" placeholder="¿Que Automovil estas ?" />
+            </div>
+            <div class="input-field second-wrap">
+                <input class="btn-search" type="submit" value="Buscar" />
+            </div>
+        </div>
+
+    </form>
+
+</div>
+<div class="datos">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="table-responsive">
+                    <table id="example" class="table table-striped" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Vehiculo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Modelo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Color)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Placa)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Precio)
+                                </th>
+                                <th></th>
+                            </tr>
+                        <thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelitem => item.Vehiculo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelitem => item.Modelo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelitem => item.Color)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelitem => item.Placa)
+                                    </td>
+
+
+                                    <td>
+                                        @Html.DisplayFor(modelitem => item.Precio)
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Vehiculo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Modelo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Color)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Placa)
+                                </th>
+
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Precio)
+                                </th>
+                                <th></th>
+                            </tr>
+
+                        </tfoot>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Content/bt/js/jquery-3.6.0.min.js"></script>
+@*<script src="~/Content/bt/js/popper.min.js"></script>*@
+@*<script src="~/Content/bt/datatables/datatables.min.js"></script>*@
+<script>
+    $(document).ready(function () {
+        $('#example').DataTable({
+            //para cambiar el lenguaje a español
+            "language": {
+                "lengthMenu": "Mostrar _MENU_ registros",
+                "zeroRecords": "No se encontraron resultados",
+                "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+                "sSearch": "Buscar:",
+                "oPaginate": {
+                    "sFirst": "Primero",
+                    "sLast": "Último",
+                    "sNext": "Siguiente",
+                    "sPrevious": "Anterior"
+                },
+                "sProcessing": "Procesando...",
+
+            },
+            searching: false
+        });
+
+    });
+</script>

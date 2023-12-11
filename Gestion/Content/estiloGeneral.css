@@ -1,0 +1,20 @@
+
+
+/*
+
+    Style by ERM
+
+*/
+
+body{
+
+    background: url("images/coche.jpg"); 
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+   
+}
+

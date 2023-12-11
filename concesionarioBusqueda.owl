@@ -1,0 +1,1321 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4"
+     xml:base="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/baneste/ontologies/2023/1/untitled-ontology-4#"
+     xmlns:untitled-ontology-41="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Abastece -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Abastece">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Abastecido_Por"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Abastecido_Por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Abastecido_Por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Compra -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Compra">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Comprado_Por"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Comprado_Por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Comprado_Por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Importa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Importa">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Importado_Por"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Importado_Por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Importado_Por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Pasa_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Pasa_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Pertenece -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Pertenece">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Empleado"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Realiza -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Realiza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Mecanico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vende -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vende">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vendido_Por"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vendedor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vendido_Por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vendido_Por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vendedor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Direccion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Direccion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Empleado_Codigo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Empleado_Codigo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Empleado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Nit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Nit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Nombre_Empresa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Nombre_Empresa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona_Edad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona_Edad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona_Email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona_Email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona_Identificacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona_Identificacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona_Nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona_Nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona_Telefono -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona_Telefono">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision_Fecha -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision_Fecha">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision_Info -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision_Info">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Telefono -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Telefono">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Color">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Marca -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Marca">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Modelo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Modelo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Placa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Placa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Precio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Precio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Administrativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Administrativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Empleado"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente_Nuevo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente_Nuevo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente_Viejo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente_Viejo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario"/>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Empleado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Empleado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Mecanico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Mecanico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Empleado"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Persona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Internacional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Internacional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Nacional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Nacional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision"/>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision_Correctiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision_Correctiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision_Preventiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision_Preventiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nacional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nacional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Usado"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Importado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Importado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Nacional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Nacional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Usado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Usado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vendedor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vendedor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Empleado"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Administrativo01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Administrativo01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Administrativo"/>
+        <untitled-ontology-41:Pertenece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Empleado_Codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#int">153</untitled-ontology-41:Empleado_Codigo>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>PedritoA@gmail.com</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>11478512456</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>Pedro Alvares</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>3258412356</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente_Nuevo"/>
+        <untitled-ontology-41:Compra rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI1"/>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">36</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>DanielaJaraMarles</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>1478562395</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>Daniela Jara Marles</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>3115261485</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente_Nuevo"/>
+        <untitled-ontology-41:Compra rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo02"/>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">52</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>SteValderramaB@gmail.com</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>1117458966</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>Steven Valderrama Beltran</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>3204875944</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente_Nuevo"/>
+        <untitled-ontology-41:Compra rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo01"/>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">56</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>JohanP@gmail.com</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>1174558956</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>Johan Puentes</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>3204815648</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente_Nuevo"/>
+        <untitled-ontology-41:Compra rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU01"/>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>OctavioMarles@gmail.com</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>407751236</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>Octavio Marles</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>3201548965</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente_Nuevo"/>
+        <untitled-ontology-41:Compra rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI2"/>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">45</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>JuanCarlos@gmail.com</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>114552638</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>Juan Carlos Caicedo</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>3265147856</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente006">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente_Nuevo"/>
+        <untitled-ontology-41:Compra rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI3"/>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>Yerfer@gmail.com</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>147512458</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>Yeferson Murcia Rodriguez</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>3125645128</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#ClienteV01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#ClienteV01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente_Viejo"/>
+        <untitled-ontology-41:Compra rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo03"/>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>AMADA@GMAIL.COM</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>40772531</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>AMANDA MARLES AGUILAR</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>3115921534</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#ClienteV02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#ClienteV02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente_Viejo"/>
+        <untitled-ontology-41:Compra rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo04"/>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">55</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>DANIEL@GMAIL.COM</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>4578426644</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>DANIEL VELA ROJAS</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>325648916</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#ClienteV03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#ClienteV03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente_Viejo"/>
+        <untitled-ontology-41:Compra rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU02"/>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">54</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>SAMUEL@GMAIL.COM</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>4613113131</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>SAMUEL ZULUAGA STERLING</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>320481322</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Porveedor08"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor01"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor02"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor03"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor04"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor05"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor06"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor07"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor09"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor10"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor11"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor12"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor13"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor14"/>
+        <untitled-ontology-41:Abastecido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor15"/>
+        <untitled-ontology-41:Direccion>Bogota Av 100 calle 13b</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>AutoLujo2022@gmail.com</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10045682</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>Auto Lujos</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>4355327</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Mecanico01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Mecanico01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Mecanico"/>
+        <untitled-ontology-41:Pertenece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Realiza rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision01"/>
+        <untitled-ontology-41:Realiza rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision02"/>
+        <untitled-ontology-41:Empleado_Codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#int">125</untitled-ontology-41:Empleado_Codigo>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>antonioA@gmail.com</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>1117553602</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>Juan Antonio Ortega Aguilar</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>3124563698</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Mecanico02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Mecanico02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Mecanico"/>
+        <untitled-ontology-41:Pertenece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Realiza rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#RevisionP01"/>
+        <untitled-ontology-41:Empleado_Codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#int">852</untitled-ontology-41:Empleado_Codigo>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>LuisAR@gmail.com</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>407725314</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>Luis Angel Rodriguez Garcia</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>3209192659</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Porveedor08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Porveedor08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Nacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo04"/>
+        <untitled-ontology-41:Direccion>Cra 9 # 16A Norte - 21, Popayán, Cauca</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>NISSAN@GMAIL.COM</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">896165</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>NISSAN MOTORS</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>(602) 8385689</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Nacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo02"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU01"/>
+        <untitled-ontology-41:Direccion>calle 20 aven 13 Pereira</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>RENAULT@GMAIL.COM</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">456258</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>RENAULT</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>3125662523</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Internacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI2"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI7"/>
+        <untitled-ontology-41:Direccion>Av. Cra 19 #1036, Italia</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>ferrari@gmail.com</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">956482</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>Ferrari</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>3132652244</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Internacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI1"/>
+        <untitled-ontology-41:Direccion>YOKOHAMA, CLL34 AV4</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>NISSANSAS@GMAIL.COM</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">458126</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>NISSAN</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>32045812645</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Internacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI3"/>
+        <untitled-ontology-41:Direccion>STUTTGAR, ALEMANIA AVE45 CLL2H</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>MERCEDES@GMAIL.COM</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">467613</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>MERCEDES</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>325564188</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Internacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI4"/>
+        <untitled-ontology-41:Direccion>SANT&apos; AGATA, ITALIA CLL34 AV45J</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>LAMBORGHINI</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">498749</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>LAMBORGHINI</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>325461855</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Internacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI5"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI6"/>
+        <untitled-ontology-41:Direccion>MOLSHELM, FRANCIA AV34</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>BUGATTI@GMAIL.COM</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">764694</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>BUGATTI</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>325548991</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor07">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Nacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo01"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU04"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU06"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU07"/>
+        <untitled-ontology-41:Direccion>BOGOTA, CENTRO AV34G</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>CHEVROLET@GMAIL.COM</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">744616</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>CHEVROLET</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>3256846178</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor09 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor09">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Nacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo03"/>
+        <untitled-ontology-41:Direccion>Bogota, AV45 CLL34 SUR</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>VOLKSWAGEN@GMAIL.COM</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">741631</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>VOLKSWAGEN</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>800 8655792436</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Nacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo05"/>
+        <untitled-ontology-41:Direccion>CALI, CENTRO CR89 NORTE</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>TOYOTA@GMAIL.COM</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">226161</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>TOYOTA</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>57 1 4578527</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Nacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo06"/>
+        <untitled-ontology-41:Direccion>MEDELLIN, CR12 CALLE 25 ALAMOS</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>FIAT@GMAIL.COM</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">464496</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>FIAT</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>3205451811</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Nacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo07"/>
+        <untitled-ontology-41:Direccion>CALI, AV14 SUR # 246-56</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>HYUNDAI@GMAIL.COM</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">549616</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>HYUNDAI</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>3204161235</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Nacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU02"/>
+        <untitled-ontology-41:Direccion>BOGOTA, CENTRO CARRE 14 CLL 34 H</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>KIA@GMAIL.COM</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">496163</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>KIA</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>3201458792</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Nacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU03"/>
+        <untitled-ontology-41:Direccion>CALI, CENTRO AV23 SUR</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>MAZDA@GMAIL.COM</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">984164</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>MAZDA</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>3141961611</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor_Nacional"/>
+        <untitled-ontology-41:Abastece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Importa rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU05"/>
+        <untitled-ontology-41:Direccion>MEDELLIN, SUR CLL23 #12-83</untitled-ontology-41:Direccion>
+        <untitled-ontology-41:Email>FORD@GMAIL.COM</untitled-ontology-41:Email>
+        <untitled-ontology-41:Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">413164</untitled-ontology-41:Nit>
+        <untitled-ontology-41:Nombre_Empresa>FORD</untitled-ontology-41:Nombre_Empresa>
+        <untitled-ontology-41:Telefono>3204517845</untitled-ontology-41:Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision_Correctiva"/>
+        <untitled-ontology-41:Revision_Fecha>2022-01-15</untitled-ontology-41:Revision_Fecha>
+        <untitled-ontology-41:Revision_Info>cambio de pastillas y liquido de frenos</untitled-ontology-41:Revision_Info>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision_Correctiva"/>
+        <untitled-ontology-41:Revision_Fecha>2022-03-02</untitled-ontology-41:Revision_Fecha>
+        <untitled-ontology-41:Revision_Info>mantenimiento y cambio de llantas y tapiceria</untitled-ontology-41:Revision_Info>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#RevisionP01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#RevisionP01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision_Preventiva"/>
+        <untitled-ontology-41:Revision_Info>2022-03-10</untitled-ontology-41:Revision_Info>
+        <untitled-ontology-41:Revision_Info>mantemienito general con cambio de filtros</untitled-ontology-41:Revision_Info>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Importado"/>
+        <untitled-ontology-41:Comprado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente001"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor03"/>
+        <untitled-ontology-41:Vendido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor02"/>
+        <untitled-ontology-41:Vehiculo_Color>Rojo</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>NISSAN</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>GTR</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>785JK</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">350000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Importado"/>
+        <untitled-ontology-41:Comprado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente005"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor02"/>
+        <untitled-ontology-41:Vendido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor03"/>
+        <untitled-ontology-41:Vehiculo_Color>Azul</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>FERRARI</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>tz200</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>456lm</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">400000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Importado"/>
+        <untitled-ontology-41:Comprado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente006"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor04"/>
+        <untitled-ontology-41:Vendido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor03"/>
+        <untitled-ontology-41:Vehiculo_Color>Negro Perlado</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>MERCEDES</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>BENZ 2022</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>QWE46</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">400000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Importado"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor05"/>
+        <untitled-ontology-41:Vehiculo_Color>Amarillo</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>LAMBORGHINI</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>HURACAN 2022</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>FG789</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">790000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Importado"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor06"/>
+        <untitled-ontology-41:Vehiculo_Color>Azul Oscuro</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>BUGATTI</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>CHIRON</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>HJ236</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">815000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Importado"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor06"/>
+        <untitled-ontology-41:Vehiculo_Color>Rojo</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>BUGATTI</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>VEYRON</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>45JK</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Importado"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor02"/>
+        <untitled-ontology-41:Vehiculo_Marca>FERRARI</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Marca>NEGRO</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>ENZO</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>451ER</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">600000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Nacional"/>
+        <untitled-ontology-41:Comprado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente003"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor07"/>
+        <untitled-ontology-41:Pasa_por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#RevisionP01"/>
+        <untitled-ontology-41:Vendido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor01"/>
+        <untitled-ontology-41:Vehiculo_Color>GRIS</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>CHEVROLET</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>ONIX</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>369GH</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Nacional"/>
+        <untitled-ontology-41:Comprado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente002"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor01"/>
+        <untitled-ontology-41:Vendido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor01"/>
+        <untitled-ontology-41:Vehiculo_Color>Negro mate</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>RENAULT</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>kWIN</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>954fh</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Nacional"/>
+        <untitled-ontology-41:Comprado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#ClienteV01"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor09"/>
+        <untitled-ontology-41:Vendido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor03"/>
+        <untitled-ontology-41:Vehiculo_Color>BLANCO</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>VOLKSWAGEN</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>T-CROSS</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>74GH4</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">170000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Nacional"/>
+        <untitled-ontology-41:Comprado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#ClienteV02"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Porveedor08"/>
+        <untitled-ontology-41:Vendido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor01"/>
+        <untitled-ontology-41:Vehiculo_Color>AZUL OSCURO</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>NISSAN</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>VERSA</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>235JS</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">165000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Nacional"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor10"/>
+        <untitled-ontology-41:Vehiculo_Color>BLANCO</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>TOYOTA</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>HILUX</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>852FG</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">220000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Nacional"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor11"/>
+        <untitled-ontology-41:Vehiculo_Color>NEGRO</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>FIAT</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>STRADA</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>854YU</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">167000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo07">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nuevo_Nacional"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor12"/>
+        <untitled-ontology-41:Vehiculo_Color>AZUL</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>HB20</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>HYUNDAI</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>78QWE</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">190000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nacional"/>
+        <untitled-ontology-41:Comprado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Cliente004"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor01"/>
+        <untitled-ontology-41:Pasa_por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision01"/>
+        <untitled-ontology-41:Vendido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor02"/>
+        <untitled-ontology-41:Vehiculo_Color>GRIS</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>RENAULT</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>STEPWAY</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>752KL</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">65000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nacional"/>
+        <untitled-ontology-41:Comprado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#ClienteV03"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor13"/>
+        <untitled-ontology-41:Pasa_por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Revision02"/>
+        <untitled-ontology-41:Vendido_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor03"/>
+        <untitled-ontology-41:Vehiculo_Color>BLANCO</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>KIA</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>NEW SPORTAGE LX</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>GHF45</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nacional"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor14"/>
+        <untitled-ontology-41:Vehiculo_Color>GRIS</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>MAZDA</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>3</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>784DF</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">45000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nacional"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor07"/>
+        <untitled-ontology-41:Vehiculo_Color>NEGRO</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>CHEVROLET</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>TRACKER</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>78HY</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nacional"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor15"/>
+        <untitled-ontology-41:Vehiculo_Color>BLANCO</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>FORD</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>FIESTA</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>36FG4</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">51000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nacional"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor07"/>
+        <untitled-ontology-41:Vehiculo_Color>GRIS</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>CHEVROLET</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>AVEO</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>85IO6</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU07">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vehiculo_Nacional"/>
+        <untitled-ontology-41:Importado_Por rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Proveedor07"/>
+        <untitled-ontology-41:Vehiculo_Color>ROJO</untitled-ontology-41:Vehiculo_Color>
+        <untitled-ontology-41:Vehiculo_Marca>CHEVROLET</untitled-ontology-41:Vehiculo_Marca>
+        <untitled-ontology-41:Vehiculo_Modelo>SPARK GT</untitled-ontology-41:Vehiculo_Modelo>
+        <untitled-ontology-41:Vehiculo_Placa>74FT3</untitled-ontology-41:Vehiculo_Placa>
+        <untitled-ontology-41:Vehiculo_Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32000000</untitled-ontology-41:Vehiculo_Precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vendedor"/>
+        <untitled-ontology-41:Pertenece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Vende rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo01"/>
+        <untitled-ontology-41:Vende rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo02"/>
+        <untitled-ontology-41:Vende rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo04"/>
+        <untitled-ontology-41:Empleado_Codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#int">368</untitled-ontology-41:Empleado_Codigo>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>arturoP@gmail.com</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>9905300978</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>Arturo Gonzales Perdomo</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>3204578126</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vendedor"/>
+        <untitled-ontology-41:Pertenece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Vende rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI1"/>
+        <untitled-ontology-41:Vende rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU01"/>
+        <untitled-ontology-41:Empleado_Codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#int">789</untitled-ontology-41:Empleado_Codigo>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>CamiloR@gmail.com</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>56789455</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>Camilo Diaz Rojas</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>3124589617</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vendedor03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Vendedor"/>
+        <untitled-ontology-41:Pertenece rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#Concesionario001"/>
+        <untitled-ontology-41:Vende rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI2"/>
+        <untitled-ontology-41:Vende rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#VehiculoNI3"/>
+        <untitled-ontology-41:Vende rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculo03"/>
+        <untitled-ontology-41:Vende rdf:resource="http://www.semanticweb.org/baneste/ontologies/2022/1/untitled-ontology-4#vehiculoU02"/>
+        <untitled-ontology-41:Empleado_Codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#int">741</untitled-ontology-41:Empleado_Codigo>
+        <untitled-ontology-41:Persona_Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</untitled-ontology-41:Persona_Edad>
+        <untitled-ontology-41:Persona_Email>Caro@gmail.com</untitled-ontology-41:Persona_Email>
+        <untitled-ontology-41:Persona_Identificacion>1147523688</untitled-ontology-41:Persona_Identificacion>
+        <untitled-ontology-41:Persona_Nombre>Carolina Artunduaga</untitled-ontology-41:Persona_Nombre>
+        <untitled-ontology-41:Persona_Telefono>3204578121</untitled-ontology-41:Persona_Telefono>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
